@@ -15,6 +15,7 @@
 		7DC08146244AE87A005D0910 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DC08144244AE87A005D0910 /* LaunchScreen.storyboard */; };
 		7DC08151244AE87A005D0910 /* NetworkLayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC08150244AE87A005D0910 /* NetworkLayerTests.swift */; };
 		7DC0815C244AE87A005D0910 /* NetworkLayerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC0815B244AE87A005D0910 /* NetworkLayerUITests.swift */; };
+		7DC0816A244AEA05005D0910 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC08169244AEA05005D0910 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		7DC08157244AE87A005D0910 /* NetworkLayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkLayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DC0815B244AE87A005D0910 /* NetworkLayerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayerUITests.swift; sourceTree = "<group>"; };
 		7DC0815D244AE87A005D0910 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DC08169244AEA05005D0910 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				7DC08139244AE870005D0910 /* AppDelegate.swift */,
 				7DC0813B244AE870005D0910 /* SceneDelegate.swift */,
 				7DC0813D244AE870005D0910 /* ViewController.swift */,
+				7DC08169244AEA05005D0910 /* NetworkManager.swift */,
 				7DC0813F244AE870005D0910 /* Main.storyboard */,
 				7DC08142244AE87A005D0910 /* Assets.xcassets */,
 				7DC08144244AE87A005D0910 /* LaunchScreen.storyboard */,
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DC0816A244AEA05005D0910 /* NetworkManager.swift in Sources */,
 				7DC0813E244AE870005D0910 /* ViewController.swift in Sources */,
 				7DC0813A244AE870005D0910 /* AppDelegate.swift in Sources */,
 				7DC0813C244AE870005D0910 /* SceneDelegate.swift in Sources */,
