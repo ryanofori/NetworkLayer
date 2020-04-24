@@ -16,17 +16,11 @@
 		7DC08151244AE87A005D0910 /* NetworkLayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC08150244AE87A005D0910 /* NetworkLayerTests.swift */; };
 		7DC0816A244AEA05005D0910 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC08169244AEA05005D0910 /* NetworkManager.swift */; };
 		7DFECBA9245076F200A0E7B4 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DFECBA8245076F200A0E7B4 /* NetworkError.swift */; };
+		7DFECBAB245304A500A0E7B4 /* NetworkManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DFECBAA245304A500A0E7B4 /* NetworkManagerTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		7DC0814D244AE87A005D0910 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7DC0812E244AE870005D0910 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7DC08135244AE870005D0910;
-			remoteInfo = NetworkLayer;
-		};
-		7DC08158244AE87A005D0910 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7DC0812E244AE870005D0910 /* Project object */;
 			proxyType = 1;
@@ -47,9 +41,9 @@
 		7DC0814C244AE87A005D0910 /* NetworkLayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkLayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DC08150244AE87A005D0910 /* NetworkLayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayerTests.swift; sourceTree = "<group>"; };
 		7DC08152244AE87A005D0910 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7DC08157244AE87A005D0910 /* NetworkLayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkLayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DC08169244AEA05005D0910 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		7DFECBA8245076F200A0E7B4 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		7DFECBAA245304A500A0E7B4 /* NetworkManagerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,13 +55,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		7DC08149244AE87A005D0910 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7DC08154244AE87A005D0910 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -91,7 +78,6 @@
 			children = (
 				7DC08136244AE870005D0910 /* NetworkLayer.app */,
 				7DC0814C244AE87A005D0910 /* NetworkLayerTests.xctest */,
-				7DC08157244AE87A005D0910 /* NetworkLayerUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -116,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				7DC08150244AE87A005D0910 /* NetworkLayerTests.swift */,
+				7DFECBAA245304A500A0E7B4 /* NetworkManagerTest.swift */,
 				7DC08152244AE87A005D0910 /* Info.plist */,
 			);
 			path = NetworkLayerTests;
@@ -159,24 +146,6 @@
 			productReference = 7DC0814C244AE87A005D0910 /* NetworkLayerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		7DC08156244AE87A005D0910 /* NetworkLayerUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7DC08166244AE87A005D0910 /* Build configuration list for PBXNativeTarget "NetworkLayerUITests" */;
-			buildPhases = (
-				7DC08153244AE87A005D0910 /* Sources */,
-				7DC08154244AE87A005D0910 /* Frameworks */,
-				7DC08155244AE87A005D0910 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7DC08159244AE87A005D0910 /* PBXTargetDependency */,
-			);
-			name = NetworkLayerUITests;
-			productName = NetworkLayerUITests;
-			productReference = 7DC08157244AE87A005D0910 /* NetworkLayerUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -191,10 +160,6 @@
 						CreatedOnToolsVersion = 11.4.1;
 					};
 					7DC0814B244AE87A005D0910 = {
-						CreatedOnToolsVersion = 11.4.1;
-						TestTargetID = 7DC08135244AE870005D0910;
-					};
-					7DC08156244AE87A005D0910 = {
 						CreatedOnToolsVersion = 11.4.1;
 						TestTargetID = 7DC08135244AE870005D0910;
 					};
@@ -215,7 +180,6 @@
 			targets = (
 				7DC08135244AE870005D0910 /* NetworkLayer */,
 				7DC0814B244AE87A005D0910 /* NetworkLayerTests */,
-				7DC08156244AE87A005D0910 /* NetworkLayerUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -232,13 +196,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		7DC0814A244AE87A005D0910 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7DC08155244AE87A005D0910 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -264,14 +221,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DFECBAB245304A500A0E7B4 /* NetworkManagerTest.swift in Sources */,
 				7DC08151244AE87A005D0910 /* NetworkLayerTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7DC08153244AE87A005D0910 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,11 +233,6 @@
 			isa = PBXTargetDependency;
 			target = 7DC08135244AE870005D0910 /* NetworkLayer */;
 			targetProxy = 7DC0814D244AE87A005D0910 /* PBXContainerItemProxy */;
-		};
-		7DC08159244AE87A005D0910 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7DC08135244AE870005D0910 /* NetworkLayer */;
-			targetProxy = 7DC08158244AE87A005D0910 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -500,44 +446,6 @@
 			};
 			name = Release;
 		};
-		7DC08167244AE87A005D0910 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = NetworkLayerUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.NetworkLayerUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = NetworkLayer;
-			};
-			name = Debug;
-		};
-		7DC08168244AE87A005D0910 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = NetworkLayerUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.NetworkLayerUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = NetworkLayer;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -564,15 +472,6 @@
 			buildConfigurations = (
 				7DC08164244AE87A005D0910 /* Debug */,
 				7DC08165244AE87A005D0910 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7DC08166244AE87A005D0910 /* Build configuration list for PBXNativeTarget "NetworkLayerUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7DC08167244AE87A005D0910 /* Debug */,
-				7DC08168244AE87A005D0910 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
