@@ -8,9 +8,10 @@
 
 import UIKit
 
-class NetworkError: Error {
-    enum staus {
-        case invalidURL
-        case noData
+class NetworkError {
+    enum Status: String, Error {
+        case paramsNil = "No params were passed"
+        case invalidURL = "invalidURL"
+        case noData = "No data"
     }
 }

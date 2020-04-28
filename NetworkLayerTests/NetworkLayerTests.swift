@@ -10,7 +10,7 @@ import XCTest
 @testable import NetworkLayer
 
 class NetworkLayerTests: XCTestCase {
-
+    let manage = NetworkManager.shared
 //    override func setUpWithError() throws {
 //        // Put setup code here. This method is called before the invocation of each test method in the class.
 //    }
@@ -19,8 +19,13 @@ class NetworkLayerTests: XCTestCase {
 //        // Put teardown code here. This method is called after the invocation of each test method in the class.
 //    }
     
+    func testURL() {
+        manage.networkURL(url: "www.google.com")
+        
+    }
+    
     func testGet() {
-        let manage = NetworkManager.shared
+        
         let url = "https://rss.itunes.apple.com/api/v1/us/apple-music/top-albums/all/100/explicit.json"
         let invaidURL = "ksdjfhl"
 //        manage.getData(urlString: invaidURL) { (data) in
