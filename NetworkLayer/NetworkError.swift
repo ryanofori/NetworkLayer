@@ -13,5 +13,6 @@ class NetworkError {
         case paramsNil = "No params were passed"
         case invalidURL = "invalidURL"
         case noData = "No data"
+        case badRequest = "Bad request"
     }
 }

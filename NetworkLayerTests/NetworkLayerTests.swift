@@ -11,6 +11,8 @@ import XCTest
 
 class NetworkLayerTests: XCTestCase {
     let manage = NetworkManager.shared
+//    let mock: MockSession
+    
 //    override func setUpWithError() throws {
 //        // Put setup code here. This method is called before the invocation of each test method in the class.
 //    }
@@ -20,23 +22,29 @@ class NetworkLayerTests: XCTestCase {
 //    }
     
     func testURL() {
-        manage.networkURL(url: "www.google.com")
+//        manage.networkURL(url: "www.google.com")
         
     }
     
     func testGet() {
-        
-        let url = "https://rss.itunes.apple.com/api/v1/us/apple-music/top-albums/all/100/explicit.json"
-        let invaidURL = "ksdjfhl"
+        //dependacy inject -> protocol and urlSession
+//        let mock = 
+        let url = ""
+//        let invaidURL = "ksdjfhl"
+        var realData: Data?
 //        manage.getData(urlString: invaidURL) { (data) in
 //            let mockData = String(decoding: data, as: UTF8.self)
 //        }
         manage.getData(urlString: url) { (data) in
-            if let jsonString = String(data: data, encoding: .utf8){
-                
-            
-            }
+            realData = data
         }
+        XCTAssertNotNil(realData)
+//        manage.getData(urlString: url) { (data) in
+//            if let jsonString = String(data: data, encoding: .utf8){
+//
+//
+//            }
+//        }
 
     }
 
